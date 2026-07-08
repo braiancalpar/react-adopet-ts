@@ -7,3 +7,12 @@ export interface Pet {
   description: string;
   image?: string;
 }
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  phone?: string;
+  city?: string;
+  about?: string;
+}
