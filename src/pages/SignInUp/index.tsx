@@ -21,7 +21,7 @@ const SignInUp = () => {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    const user = await login(loginData.email, loginData.password);
+    const user = await login(loginData);
     console.log(user);
     if (user) {
       return navigate("/");
